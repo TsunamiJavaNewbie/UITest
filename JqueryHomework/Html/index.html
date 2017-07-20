@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple jquery test</title>
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../js/JQDo.js"></script>
+</head>
+<body>
+<div class="panel panel-default">
+    <div align="center" id="add" class="panel-footer">
+        <table>
+            <tr>
+                <td>姓名:</td>
+                <td><input type="text" id="name" name="addinput"/></td>
+            </tr>
+            <tr>
+                <td>性别:</td>
+                <td><input type="text" id="sex" name="addinput"/></td>
+            </tr>
+            <tr>
+                <td>密码:</td>
+                <td><input type="text" id="password" name="addinput"/></td>
+            </tr>
+            <tr>
+                <td>地址:</td>
+                <td><input type="text" id="address" name="addinput"/></td>
+            </tr>
+        </table>
+        <input type="button" value="添加" id="AddUser" class="btn btn-primary"
+               data-toggle="button"/>
+    </div>
+    <div align="center" id="body" class="panel-body">
+        <table border="3" id="table" class="table table-hover ">
+            <tbody>
+            <tr>
+                <th><input type="button" id="btn1" value="全选" class="btn btn-primary"
+                           data-toggle="button"/></th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>密码</th>
+                <th>地址</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox"></td>
+                <td>Tester</td>
+                <td>男</td>
+                <td>testpassword</td>
+                <td>广东</td>
+            </tr>
+            </tbody>
+        </table>
+        <input type="button" name="add" value="增加" class="btn btn-primary"
+               data-toggle="button"/>
+        <input type="button" name="del" value="删除" class="btn btn-primary"
+               data-toggle="button"/>
+        <input type="button" name="save" value="保存" class="btn btn-primary"
+               data-toggle="button"/>
+    </div>
+    <div align="center" class="panel-footer" id="divsave">
+        <p id="showSave" class="text-center"></p>
+    </div>
+</div>
+</body>
+</html>
